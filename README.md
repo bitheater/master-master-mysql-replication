@@ -19,9 +19,8 @@
     skip-networking=0
 
 ### Grant replication rights to the replication user
-
-    mysql -u root
-    GRANT REPLICATION SLAVE ON *.* TO replication_user;
+    
+    GRANT REPLICATION SLAVE ON *.* TO 'replication_user'@'%' IDENTIFIED BY 'password';
     
 ### On the master, flush and lock all tables by running 
     
