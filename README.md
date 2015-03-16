@@ -34,3 +34,5 @@
     +--------------------+----------+--------------+------------------+
     | mariadb-bin.00001  |      101 |              |                  |
     +--------------------+----------+--------------+------------------+
+
+    CHANGE MASTER TO MASTER_HOST='172.16.0.102', MASTER_USER='replication_user', MASTER_PASSWORD='password', MASTER_PORT=3306, MASTER_LOG_FILE='mariadb-bin.000001', MASTER_LOG_POS=556, MASTER_CONNECT_RETRY=10;
